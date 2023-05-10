@@ -109,8 +109,7 @@ secondHalfOfArrayIfItIsEven(fruits);
  * - Use string method .slice()
  */
 function youGottaCalmDown(shout) {
-  const exclamation = "!";
-  if (shout.includes(exclamation)){
+  if (shout.includes("!")){
     console.log(shout.slice(0, shout.indexOf("!") + 1));  
     return shout;
   }
@@ -118,7 +117,6 @@ function youGottaCalmDown(shout) {
     console.log(shout);
     return shout;
   }
-
 }
 youGottaCalmDown("AHHHH!!!!");
 

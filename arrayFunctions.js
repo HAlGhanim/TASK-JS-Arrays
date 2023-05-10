@@ -53,10 +53,9 @@ let instructionTeam = ["Yousef", "Fatma", "Hasan"]
 function addLailaToArray(instructors) {
   const instructionTeam2 = instructionTeam.slice(0, 3);
   instructionTeam2.push(instructors);
-  console.log(instructionTeam2);
   return instructionTeam2;
 }
-addLailaToArray("Laila");
+console.log(addLailaToArray("Laila"));
 /**
  * eliminateTeam(teams):
  * - receives array `teams`
@@ -67,9 +66,9 @@ addLailaToArray("Laila");
  */
 const teams = ["Brazil","Germany","Italy"];
 function eliminateTeam(teams) {
-  return console.log(teams.pop());
+  return teams.pop();
 }
-eliminateTeam(teams);
+console.log(eliminateTeam(teams));
 /**
  * secondHalfOfArrayIfItIsEven(fruits):
  * - receives array `fruits`
@@ -85,15 +84,14 @@ function secondHalfOfArrayIfItIsEven(fruits) {
   if (fruits.length % 2 == 0){
     const middlePoint = Math.ceil(fruits.length/2);
     const secondHalf = fruits.splice(-middlePoint);
-    console.log(secondHalf);
-    return fruits;
+    return secondHalf, fruits;
   }
   else {
-    console.log("Empty array")
-    return fruits = [];
+    
+    return fruits = [], "Empty Array";
   }
 }
-secondHalfOfArrayIfItIsEven(fruits);
+console.log(secondHalfOfArrayIfItIsEven(fruits));
 /**
  * youGottaCalmDown(shout):
  * - receives a string `shout`
@@ -110,15 +108,13 @@ secondHalfOfArrayIfItIsEven(fruits);
  */
 function youGottaCalmDown(shout) {
   if (shout.includes("!")){
-    console.log(shout.slice(0, shout.indexOf("!") + 1));  
-    return shout;
+    return shout, shout.slice(0, shout.indexOf("!") + 1);;
   }
   else {
-    console.log(shout);
     return shout;
   }
 }
-youGottaCalmDown("AHHHH!!!!");
+console.log(youGottaCalmDown("AHHHH!!!!"));
 
 
 
